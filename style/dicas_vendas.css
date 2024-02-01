@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.vendas{
+    background: #14b693;
+    color: #fff;
+    min-height: 100%;
+    padding: 100px 0;
+}
+
+.vendas .titulo{
+    margin-bottom: 40px;
+}
+
+.vendas .conteudo .conteudo .imagem img{
+    max-width: 100%;
+}
+
+.vendas .conteudo .conteudo:nth-child(4) 
+.conteudo:nth-child(1){
+    margin-top: 40px;
+}
+
+.vendas .conteudo .conteudo:nth-child(4) 
+.conteudo:nth-child(2) div:nth-child(2){
+    max-width: 100%;
+}
+
+
+.vendas .conteudo .conteudo:nth-child(4) 
+.conteudo:nth-child(2) div:nth-child(2) img{
+    max-width: 100px;
+    margin: 0 4px;
+}
+
+.propaganda{
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+.modal-abrir{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 10;
+    padding: 40px;
+    overflow: auto;
+}
+
+#close{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 40px;
+    color: #000;
+    cursor: pointer;
+
+}
+
+#close:hover{
+    color: #df0505;
+}
+
+
+.img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 38%;
+    overflow: hidden;
+}
+
+.img .sobrepor{
+    position: absolute;
+    background: #000;
+    left: 3px;
+    right: 3px;
+    min-width: 90%;
+    min-height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img .sobrepor:hover{
+    opacity: 0.5;
+    color: #fff;
+}
+
+
+.img .lupa{
+    position: absolute;
+    display: flex;
+    align-self: center;
+    font-size: 40px;
+    color: #000;
+}
+
+
+
+.modal-conteudo{
+    max-width: 38%;
+}
+
+
+.modal-conteudo img{
+    max-width: 100%;
+}
+
+.modal-conteudo{
+    animation-name: zoom;
+    -moz-animation-name: zoom;
+    -webkit-animation-name: zoom;
+    -o-animation-name: zoom;
+    animation-duration: 0.6s;
+    -moz-animation-duration: 0.6s;
+    -webkit-animation-duration: 0.6s;
+    -o-animation-duration: 0.6s;
+}
+
+
+@keyframes zoom {
+    from {transform: scale(0);
+         -webkit-transform: scale(0);
+         -moz-transform: scale(0); 
+         -o-transform: scale(0)}
+    to {transform: scale(1); 
+        -webkit-transform: scale(1); 
+        -moz-transform: scale(1); 
+        -o-transform: scale(1);}
+}
+
+
+
+@media screen and (min-width: 300px) and (max-width: 760px){
+    .vendas .conteudo .conteudo p{
+        text-align: justify;
+    }
+}

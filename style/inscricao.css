@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    height: 100%;
+    overflow: auto;
+}
+
+
+.ebook{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(#8750d4 40%, #300666 100%);
+ }
+
+.ebook .imagem img{
+    max-width: 300px;
+    max-height: auto; 
+} 
+
+.ebook .conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    max-width: 400px;
+}
+
+.ebook .conteudo h4{
+    color: #ffffff;
+    text-align: justify;
+    font-size: 30px;
+}
+
+.page{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #cdd;
+    height: 100vh;
+}

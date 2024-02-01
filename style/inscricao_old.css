@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.inscricao{
+    background: url('../imagens/fundo_inscricao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: 100%;
+    /* background: #d664b4; */
+    padding: 50px 0;
+}
+
+.inscricao h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #5755ce;
+}
+
+.inscricao span{
+    text-transform: uppercase;
+    color:#a52a2a;
+}
+
+.inscricao .conteudo{
+    margin-top: 30px;
+    color: #fff;
+}
+
+.inscricao .conteudo h4{
+    color: #a52a2a;
+}
+
+.inscricao .conteudo .texto{
+    column-count: 2;
+}
+
+.inscricao .conteudo .imagem img{
+    max-width: 100%;
+}
+
+.inscricao .formulario button{
+    margin-bottom: 4px;
+}
+
+.inscricao .formulario form h4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.inscricao .formulario form input{
+    color: #0f8d7c;
+}
+
+
+/** MODAL  COM GIF **/
+.modal-abrir{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 10;
+    padding: 40px;
+    overflow: auto;
+}

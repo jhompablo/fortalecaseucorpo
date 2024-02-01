@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <head>
+        <title>página de inscrição</title>
+        <meta http-equiv="Content-Type" content="text/html; utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="imagens/fav-icon.png">
+        <link rel="stylesheet" type="text/css" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.3-web/css/all.css">
+        <link rel="stylesheet" type="text/css" href="style/inscricao.css">
+        <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="script/inscricao.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid inscricao">
+            <div class="col-md-12 d-flex flex-column flex-wrap justify-content-center align-items-center">
+                <h1 class="text-center">Você está pronto para turbinar o seu <span>corpo</span>?</h1>
+                <div class="col-md-10 d-flex flex-row flex-wrap justify-content-center align-items-center conteudo">
+                    <div class="col-md-6 imagem">
+                        <img src="imagens/capa_inscricao_02.png" class="img-responsive" alt="capa">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center formulario">
+                        <form method="POST" action="" id="formulario">
+                            <h4>Inscreva-se para receber novidades e conhecer o produto</h4>
+                            <input type="text" placeholder="seu nome" id="nome" name="nome" class="form-control"><br>
+                            <input type="email" placeholder="seu email" id="email" name="email" class="form-control"><br>
+                            <div class="form-group d-flex flex-column">
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                                <button type="reset" class="btn btn-danger">Limpar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="imagem">
+                    <img src="imagens/loading.gif" alt="carregando">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

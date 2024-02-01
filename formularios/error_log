@@ -1,0 +1,4 @@
+[17-May-2021 04:11:09 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined function ob_clan() in /home2/forta726/public_html/formularios/inscricao.php:3
+Stack trace:
+#0 {main}
+  thrown in /home2/forta726/public_html/formularios/inscricao.php on line 3

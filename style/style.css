@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    /* scroll-behavior: smooth; */
+}
+
+html, body{
+    height: 100%;
+    overflow: auto;
+}
+
+/* CLASSE PARA PROPRIEDADES GERAIS */
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    text-align: center;
+}
+
+.capa{
+    background-image: url('../imagens/capa_site_05.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    padding: 50px 50px 0;
+}
+
+.capa .conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    max-width: 40em;
+    margin: 20px 50px 100px;
+}
+
+.capa .conteudo h1{
+    text-align: left;
+    line-height: 40px;
+    margin-bottom: 20px;
+
+}
+
+.capa .conteudo h1::before{
+    content: "\201C";
+}
+
+.capa .conteudo p{
+    display: block;
+    word-break: normal;
+    text-align: justify;
+    column-count: 2;
+}
+
+.capa .botoes{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 200px;
+    width: 100%;
+}
+
+.capa .botoes button{
+    width: 14em;
+    height: 50px;
+    border-radius: 40px;
+    margin: 0 2px
+}
+
+/* SEÇÃO INFO */
+.info{
+    background: #c46f0d;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+.info .conteudo .conteudo{
+    text-align: left;
+}
+
+.info .conteudo:nth-child(3) .conteudo{
+    text-align: right;
+}
+
+
+/* SEÇÃO ALIMENTOS */
+.alimentos{
+    color: #fff;
+    background: #046b51;
+    padding-bottom: 100px;
+
+}
+
+.alimentos .conteudo .alimento{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.alimentos .conteudo .alimento p{
+    text-align: left;
+}
+
+.alimentos .conteudo:nth-child(3){
+    color: #fc9804;
+    font-size: 18px;
+    margin: 80px 40px 0;
+}
+
+
+/* SEÇÃO VITAMINAS */
+.vitaminas{
+    background: url('../imagens/fundo_vitamina05.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top right;
+    padding: 0 40px 100px;
+}
+
+.vitaminas .receita{
+    margin-top: 100px;
+}
+
+.vitaminas .receita .conteudo {
+    text-align: left;
+}
+
+.vitaminas .conteudo .conteudo{
+    color: #961414;
+    font-weight: 600;
+}
+
+
+.vitaminas h3{
+    color: #fff;
+}
+
+
+/* SEÇÃO IMUNIDADE */
+.imunidade{
+    background: #a52a2a;
+    min-height: 100%;
+    color: #fff;
+}
+
+.imunidade div{
+    margin-bottom: 20px;
+}
+
+.imunidade .conteudo h3{
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.imunidade .conteudo li{
+    text-align: left;
+}
+
+/* SEÇÃO REVISTA */
+.revista{
+    background: #046b51;
+    min-height: 100%;
+}
+
+.revista h2{
+    color: #fffb00;
+}
+
+.revista:last-child{
+    padding-bottom: 100px;
+}
+
+.revista .revista .conteudo{
+    text-align: justify;
+}
+
+.revista .revista .conteudo p::first-letter{
+    color: #fc9804;
+    font-size: 40px;
+}
+
+.revista .revista .conteudo{
+    color: #fff;
+}
+
+.revista .conteudo .revista{
+    margin-bottom: 40px;
+}
+
+
+/* SEÇÃO MATERIAL */
+.material{
+    background:#641805;
+    color: #fff;
+    padding-bottom: 100px;
+    overflow-x: hidden;
+}
+
+
+.material .conteudo .conteudo h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fffb00;
+    text-align: left;
+}
+
+.material .conteudo .conteudo li{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    font-size: 18px;
+    text-align: left;
+    color:#fff;
+}
+
+.material .conteudo .conteudo li::before{
+    content: '\2713';
+    letter-spacing: 10px;
+    color: #fffb00;
+    font-size: 20px;
+}
+
+
+/* SEÇÃO EBOOK */
+.ebook{
+    background:#962306;
+    color:#fbff00;
+    padding-bottom: 100px;
+}
+
+.ebook .conteudo .conteudo li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+
+.ebook .conteudo .conteudo:nth-child(1) li:nth-child(1)::before{
+    content: '1 ';
+    font-size: 40px;
+    color: #fff;
+}
+
+.ebook .conteudo .conteudo:nth-child(1) li:nth-child(2)::before{
+    content: '2 ';
+    font-size: 40px;
+    color: #fbff00;
+}
+
+.ebook .conteudo .conteudo:nth-child(2) li:nth-child(1)::before{
+    content: '3 ';
+    font-size: 40px;
+    color: #fff;
+}
+
+.ebook .conteudo .conteudo:nth-child(3) li:nth-child(1)::before{
+    content: '4 ';
+    font-size: 40px;
+    color: #fbff00;
+}
+
+.ebook .conteudo .conteudo:nth-child(3) li:nth-child(2)::before{
+    content: '5 ';
+    font-size: 40px;
+    color: #fff;
+}
+
+.ebook .conteudo .conteudo:nth-child(3) li:nth-child(3)::before{
+    content: '6 ';
+    font-size: 40px;
+    color: #fbff00;
+}
+
+
+/* seção banner */
+.banner{
+    background: #000;
+    min-height: auto;
+    color: #fffb00;
+    padding: 50px 0 50px;
+}
+
+
+/* seção checklist */
+.checklist{
+    background: #047c7c;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+.checklist li{
+    list-style: none;
+    text-align: left;
+    color: #eeff00;
+    font-weight: 600;
+}
+
+.checklist h3{
+    text-align: left;
+}
+
+.checklist li::before{
+    content: '\2713 ';
+    letter-spacing: 20px;
+}
+
+/* seção mapa mental */
+.mapa_mental{
+    color: #fff;
+    background: #813a0b;
+    padding-bottom: 100px;
+}
+
+
+/* seção folha de recursos */
+.folha_recursos{
+    background: #032744;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+.folha_recursos li{
+    list-style: none;
+    color: #eeff00;
+}
+
+.folha_recursos li::before{
+    content: '\2713';
+    letter-spacing: 20px;
+}
+
+.folha_recursos .conteudo .conteudo{
+    text-align: right;
+}
+
+/* seção marketing */
+.marketing{
+    background: url('../imagens/fundo_marketing07.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    background-attachment: fixed;
+    /* background: #0e474b; */
+    color: #fff;
+    padding-bottom: 100px;
+    position: relative;
+
+}
+
+.marketing .conteudo:nth-child(even){
+    text-align: left;
+}
+
+.marketing .conteudo{
+    text-align: right;
+}
+
+
+.marketing button{
+    display: flex;
+    border-radius: 50px;
+    font-size: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    color: #813a0b;
+}
+
+/* caractere de escape ou css code - unicode */
+.marketing button::before{
+    content: "\00BB";
+    font-size: 35px;
+}
+
+.marketing button::after{
+    content: "\00AB";
+    font-size: 35px;
+}
+
+
+/* SEÇÃO PARCEIRO */
+.parceiro{
+    background: #771462;
+    padding-bottom: 100px;
+    min-height: 100%;
+    color: #fff;
+}
+
+
+.parceiro .conteudo h3{
+    list-style-type: none;
+}
+
+.parceiro .conteudo .conteudo:nth-child(2){
+    color: #fff;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.parceiro .conteudo .conteudo:nth-child(3) h3::before{
+    content: "\00BB";
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+.parceiro #parceiro:hover,
+.parceiro #dicas:hover,
+.parceiro #foco:hover{
+    color: #eeff00;
+}
+
+
+
+/* SEÇÃO RODAPÉ */
+.rodape {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background: #000;
+    text-align: center;
+    color: #fff;
+}
+
+.contato, .pagamento, .seguranca{
+    width: auto;
+    margin: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+}
+
+.contato li, .pagamento li, .seguranca li{
+    display: flex;
+    list-style-type: none;
+}
+
+
+.contato li p, .pagamento li p, .seguranca li p{
+    font-size: 12px;
+    text-align: left;
+}
+
+.contato h3, .pagamento h3, .seguranca h3{
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contato li i, .contato li p, .seguranca li{
+    display: inline;
+    float: left;
+    width: auto;
+    margin: 3px;
+}
+
+.seguranca li{
+   line-height: 2px;
+}
+
+.seguranca li i{
+    font-size: 50px;
+    color: #df6502;
+}
+
+.rodape .texto{
+    margin: 0 40px;
+}
+
+
+.rodape .seta{
+    position: absolute;
+    width: 5em;
+    bottom: 0;
+    right: 0;
+    margin: 0 100px 70px;
+    transition: all ease-in .5s;
+    transition-delay: 300ms;
+    cursor: pointer;
+
+}
+
+
+.hide{
+    opacity: 0;
+    transition: all ease-in .5s;
+    transition-delay: 300ms;
+}
+
+
+/* TIPOGRAFIA */
+.info h2, .alimentos h2, .vitaminas h2, .imunidade h2, .revista h2, .material h2,
+.ebook h2, .banner h2, .checklist h2, .mapa_mental h2, .folha_recursos h2, .marketing h2,
+.parceiro h2{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 60px 0;  
+}
+
+
+
+/************************************** SEÇÃO DE FORMULARIO *******************************************/
+.formulario button{
+    margin: 0 4px;
+}

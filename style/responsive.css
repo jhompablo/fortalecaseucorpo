@@ -1,0 +1,350 @@
+@media screen and (min-width: 200px) and (max-width: 500px){
+
+
+    /* SEÇÃO CAPA */
+    .capa{
+        background-attachment: local;
+    }
+
+    .capa .conteudo{
+        max-width: 100%;
+        margin: 20px 0 100px;
+        font-size: 15px;
+    }
+
+    .capa .conteudo h1{
+        font-size: 20px;
+    }
+
+    .capa .conteudo h1 span{
+        font-size: 30px !important;
+    }
+
+    .capa .conteudo p{
+        column-count: auto;
+    }
+
+    .capa .botoes{
+        height: 140px;
+        margin-bottom: 20px;
+    }
+
+
+    /* SEÇÃO INFO */
+    .info .conteudo .conteudo,
+    .info .conteudo:nth-child(3) .conteudo{
+        text-align: center;
+    }
+
+
+    /* SEÇÃO ALIMENTOS */
+    .alimentos .conteudo .alimento p{
+        text-align: center;
+    }
+
+    .alimentos .conteudo:nth-child(3){
+        margin: 20px 10px;
+        text-align: justify;
+    }
+
+    /* SEÇÃO VITAMINAS */
+    .vitaminas{
+        background-attachment: local;
+    }
+
+    .vitaminas .conteudo .conteudo{
+        margin-top: 20px;
+        text-align: justify;
+    }
+
+    .vitaminas .imagem img:nth-child(2){
+        display: none;
+    }
+    
+
+    /* SEÇÃO IMUNIDADE */
+    .imunidade .conteudo{
+        text-align: justify !important;
+    }
+
+    .imunidade div{
+        margin-bottom: 20px;
+    }
+
+
+    /* SEÇÃO BANNER */
+    .banner h2{
+        font-size: 30px;
+    }
+
+
+    /* SEÇÃO MATERIAL */
+    .material .conteudo .conteudo li{
+        font-size: 15px;
+    }
+
+    /* SEÇÃO EBOOK */
+    .ebook .conteudo .conteudo li{
+        text-align: justify !important;
+    }
+
+    /* SEÇÃO FOLHA RECURSOS */
+    .folha_recursos h3, li{
+        text-align: left;
+    }
+
+    /* SEÇÃO BANNER - 2 */
+    .banner .conteudo .conteudo h2{
+        display: none;
+    }
+
+
+    /* SEÇÃO MARKETING */
+    .marketing{
+        background-attachment: local;
+    }
+
+    .marketing .conteudo{
+        text-align: left;
+    }
+
+    .marketing .conteudo button{
+        font-size: 24px;
+    }
+
+    .marketing button::before{
+        content: "\00BB";
+        font-size: 24px;
+    }
+    
+    .marketing button::after{
+        content: "\00AB";
+        font-size: 24px;
+    }
+
+
+    /* SEÇÃO PARCEIRO */
+    .parceiro{
+        display: none;
+    }
+
+    .parceiro .conteudo .conteudo:nth-child(3) .conteudo h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .seta{
+        display: none;
+    }
+
+
+    /* SEÇÃO RODAPÉ */
+
+    .rodape ul.contato, .rodape ul.pagamento, .rodape ul.seguranca{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
+        height: auto;
+    }
+
+    .rodape .contato h3, .rodape .pagamento h3, .rodape .seguranca h3{
+        font-size: 18px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .rodape .contato li p, .rodape .pagamento li p, .rodape .seguranca li p{
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .rodape .pagamento img{
+        width: 120px;
+    }
+
+    .rodape .texto{
+        font-size: 10px;
+    }
+
+
+
+
+    /* tipografia */
+    .info h2, .alimentos h2, .vitaminas h2, .imunidade h2, 
+    .revista h2, .material h2, .ebook h2, .checklist h2,
+    .mapa_mental h2, .folha_recursos h2, .marketing h2{
+        font-size: 40px
+    }
+
+    /* margin */
+    .info, .alimentos, .vitaminas, .imunidade, .revista, .material, .ebook, 
+    .banner, .checklist, .mapa_mental, .folha_recursos, .marketing{
+        padding: 20px 10px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+
+    /* SEÇÃO INFO */
+    .info .conteudo{
+        display: flex !important;
+        flex-direction: column !important;
+        min-width: 100% !important;
+    }
+
+    .info .conteudo .imagem, .info .conteudo .conteudo{
+        margin: 0 !important;
+        padding: 0 !important;
+        /* min-width: 100% !important; */
+        text-align: center !important;
+    }
+
+
+    /* SEÇÃO VITAMINAS */
+    .vitaminas .conteudo{
+        display: flex !important;
+        flex-direction: column !important;
+        min-width: 100% !important; 
+    }
+
+    .vitaminas .conteudo .imagem{
+        max-width: 300px !important; 
+    }
+
+    .vitaminas .receita .imagem{
+        min-width: 75% !important; 
+    }
+
+
+    /* SEÇÃO IMUNIDADE */
+    .imunidade div {
+        display: flex !important;
+        flex-flow: column-reverse nowrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-width: 100% !important;
+        text-align: center !important;
+    }
+
+    .imunidade div:nth-child(5){
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        min-width: 100% !important;
+    }
+
+    .imunidade div:nth-child(5) .conteudo{
+        display: flex !important;
+        flex-direction: column !important;
+        min-width: 50% !important;
+    }
+
+    .imunidade div:nth-child(5) .imagem{
+        min-width: 60% !important;
+    }
+
+    .imunidade .imagem img{
+        max-width: 75% !important;
+    }
+
+
+
+    /* SEÇÃO REVISTA */
+    .revista .conteudo .revista{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .revista .conteudo .revista .imagem, 
+    .revista .conteudo .revista .conteudo{
+        min-width: 100% !important;
+    }
+
+    /* SEÇÃO MATERIAL */
+    .material .conteudo{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-width: 100% !important;
+    }
+
+    .material .conteudo .imagem{
+        min-width: 70% !important;
+    }
+
+    .material .conteudo .conteudo{
+        min-width: 50% !important;
+    }
+
+
+    /* SEÇÃO CHECKLIST */
+    .checklist .conteudo{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-width: 100% !important;
+    }
+
+    .checklist .conteudo .imagem{
+        min-width: 70% !important;
+    }
+
+    .checklist .conteudo .conteudo{
+    
+        min-width: 50% !important;
+    }
+
+
+    /* SEÇÃO FOLHA DE RECURSOS */
+    .folha_recursos .conteudo{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-width: 100% !important;
+    }
+
+    .folha_recursos .conteudo .conteudo{
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: left !important;
+        min-width: 50% !important;
+
+    }
+
+    .folha_recursos .conteudo .imagem{
+        min-width: 70% !important;
+    }
+
+
+    /* SEÇÃO BANNER */
+    .banner .conteudo{
+        min-width: 100%;
+    }
+    .banner .conteudo .imagem{
+        display: none;
+    }
+
+
+    /* SEÇÃO MARKETING */
+    .marketing div:nth-child(12) .conteudo:nth-child(2){
+        display: flex !important;
+        flex-direction: column !important;
+        min-width: 100% !important;
+    }
+
+    .marketing div:nth-child(12) .conteudo:nth-child(2) .imagem{
+        min-width: 50% !important;
+    }
+
+}
+
+@media (max-width: 1024px){
+    .rodape .seta{
+        display: none !important;
+    }
+}

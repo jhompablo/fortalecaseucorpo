@@ -1,0 +1,25 @@
+html, body{
+    height: 100%;
+    background: #2d0e55;
+}
+
+.conteudo{
+    min-height: 100%;
+}
+
+.conteudo .conteudo{
+    margin: 100px 0  100px;
+    color: #fff;
+}
+
+.conteudo .conteudo a{
+    color: #eeff00;
+}
+
+.conteudo .conteudo h2{
+    color: #eeff00;
+}
+
+.conteudo h2, .conteudo h3{
+    text-align: left;
+}

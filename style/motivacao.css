@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    overflow: auto;
+}
+
+.motivacao{
+    background: #06802b;
+    color: #fff;
+    min-height: 100%;
+    padding: 50px 0 100px;
+}
+
+
+.motivacao .fundo_motivacao img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+.motivacao .titulo{
+    background: url('/imagens/fundo_titulo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    min-height: 300px;
+}
+
+.motivacao h1, h2{
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.motivacao .conteudo .conteudo p::first-letter{
+    font-size: 30px;
+    color: #eeff00;
+}
+
+.motivacao .conteudo .conteudo img{
+    max-width: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (min-width: 300px) and (max-width: 640px){
+    .motivacao .conteudo .titulo *{
+        font-size: 20px;
+    }
+
+    .motivacao .conteudo .conteudo *{
+        text-align: justify;
+    }
+}
+
